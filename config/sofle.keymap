@@ -14,7 +14,7 @@
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  `    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   ß   |
+// |  <    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   ß   |
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
@@ -39,10 +39,10 @@
 // |  >    |  =  |  -  |  +   |  {   |  }   |        |  |       |  [   |  ]    |  ;    |  :   |   \   |   /   |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&trans    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &kp F6    &kp F7   &kp F8          &kp F9    &kp F10   &kp F11
+&none    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &kp F6    &kp F7   &kp F8          &kp F9    &kp F10   &kp F11
 &kp GRAVE &kp N1    &kp N2    &kp N3      &kp N4    &kp N5                    &kp N6    &kp N7   &kp N8          &kp N9    &kp N0    &kp F12
 &kp LA(L)    &kp EXCL  &kp AT    &kp HASH    &kp DLLR  &kp PRCNT              &kp AMPS  &kp LPAR &kp GRAVE &kp CARET &kp RBRC  &kp PIPE
-&kp GRAVE    &kp RPAR &kp MINUS &kp FSLH &kp LA(N8)  &kp LA(N9)  &trans   &trans &kp LBKT  &kp RBKT &kp SEMI        &kp COLON &kp BSLH  &kp LA(LS(N5))
+&kp GRAVE    &kp RPAR &kp MINUS &kp FSLH &kp LA(N8)  &kp LA(N9)  &none   &none &kp LBKT  &kp RBKT &kp SEMI        &kp COLON &kp BSLH  &kp LA(LS(N5))
                     &trans    &trans      &trans    &trans    &trans   &trans &trans    &trans   &trans          &trans
             >;
 
@@ -52,14 +52,14 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-// |     | INS  | PSCR | GUI   |       |      |                | PGUP | END  |   ^   | HOME |  INS  |   0   |
+// |     | INS  | PSCR | GUI   |       |      |                | PGUP | END  |   ^   | HOME |  INS  |      |
 // |     | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   | ->   |  DEL  | BKSPC |
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      | SCRL | PRVS | PLAY  | NEXT |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4               &trans     &trans      &trans   &trans      &trans     &trans
-&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                     &kp PG_UP  &kp END     &kp UP   &kp HOME    &kp INS    &kp N0  &trans
-&trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                   &kp PG_DN  &kp LEFT    &kp DOWN   &kp RIGHT   &kp DEL    &kp BSPC
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4               &none     &none      &none   &none      &none     &none
+&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &none       &tranonens                     &kp PG_UP  &kp END     &kp UP   &kp HOME    &kp INS    &none  &none
+&trans     &kp LALT     &kp LCTRL    &kp LSHFT    &none       &kp CLCK                   &kp PG_DN  &kp LEFT    &kp DOWN   &kp RIGHT   &kp DEL    &kp BSPC
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans     &trans  &kp SLCK   &kp C_PREV  &kp C_PP &kp C_NEXT  &trans     &trans
                         &trans       &trans       &trans       &trans  &trans     &trans  &trans     &trans      &trans   &trans
             >;
@@ -68,6 +68,6 @@
         };
     };
 };
-// lower_layer
-// <12345   67890=´ß+{}´ßß´´+{}ü+öÖ#öﬁ'&Ü></>&=====================}}=/<<<&&&&&ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜüüü+öÖö+++++++++++++++''ä''  ''''''''''''''''''''''''''/'//
+// lower_layer<>
+// <12345   67890=´ß+{}´ßß´´+{}ü+öÖ#öﬁ'&Ü></>&==========üüüüüüü==========}}=/<<<&&&&&ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜüüü+öÖö+++++++++++++++''ä''  ''''''''''''''''''''''''''/'//
 //  !"§$%   )=&/*'   zzz´ß++ÜÜ****=/=/=/<&Ü''Ü&'&'Ü&'Ü&'Ü&&>/&>/=>/=üü+öÖ#ﬁﬁﬁ#Ööö++üü+öÖ#ﬁ’ÖﬁŒﬁ’Ö#Öﬁ’Öﬁ’Ö#Ö// ´ß+{}}klääääüüääüßß-.,mnnnü+ö#ÖÖÖ#######################
