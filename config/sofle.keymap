@@ -28,7 +28,18 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+                am: alpha_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALPHA_MT";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+            retro-tap;
+        };
     };
+    ZMK_UNICODE_SINGLE(s_lbkt, KP_N0, KP_N0, KP_N9, KP_N1)      // [
     keymap {
         compatible = "zmk,keymap";
 
