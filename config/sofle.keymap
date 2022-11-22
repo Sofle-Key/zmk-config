@@ -15,8 +15,8 @@
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |  <    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   ß   |
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   Ü   |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   Ö   |   Ä   |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| GUI  | ALT   | CTRL  |
             bindings = <
@@ -39,11 +39,11 @@
 // |  >    |  =  |  -  |  +   |  {   |  }   |        |  |       |  [   |  ]    |  ;    |  :   |   \   |   /   |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&none    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &kp F6    &kp F7   &kp F8          &kp F9    &kp F10   &kp F11
-&trans &kp N1    &kp N2    &kp N3      &kp N4    &kp N5                    &kp N6    &kp N7   &kp N8          &kp N9    &kp N0    &kp F12
-&kp L    &kp EXCL  &kp AT    &kp HASH    &kp DLLR  &kp PRCNT              &kp AMPS  &kp LPAR &kp GRAVE &kp CARET &kp RBRC  &kp PIPE
-&kp GRAVE    &kp RPAR &kp MINUS &kp FSLH &kp LA(N8)  &kp LA(N9)  &none   &none &kp LBKT  &kp RBKT &kp SEMI        &kp COLON &kp BSLH  &kp LA(LS(N5))
-                    &trans    &trans      &trans    &trans    &trans   &trans &trans    &trans   &trans          &trans
+&none    &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                        &kp F6    &kp F7   &kp F8          &kp F9    &kp F10   &kp F11
+&trans &kp N1    &kp N2    &kp N3      &kp N4    &kp N5                          &kp N6    &kp N7   &kp N8          &kp N9    &kp N0    &kp F12
+&kp L    &kp EXCL  &kp AT    &kp HASH    &kp DLLR  &kp PRCNT                     &kp AMPS  &kp LPAR &kp GRAVE       &kp CARET &kp RBRC  &kp PIPE
+&kp GRAVE    &kp RPAR &kp MINUS &kp FSLH &kp LA(N8)  &kp LA(N9)  &trans   &trans &kp LBKT  &kp RBKT &kp SEMI        &kp COLON &kp BSLH  &kp LA(LS(N5))
+                      &trans    &trans   &trans      &trans      &trans   &trans &trans    &trans   &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp F11 F12 &inc_dec_kp PG_UP PG_DN>;
@@ -68,6 +68,6 @@
         };
     };
 };
-// lower_layer<>
-// <12345   67890=´ß+{}´ßß´´+{}ü+öÖ#öﬁ'&Ü></>&==========üüüüüüü==========}}=/<<<&&&&&ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜüüü+öÖö+++++++++++++++''ä''  ''''''''''''''''''''''''''/'//
-//  !"§$%   )=&/*'   zzz´ß++ÜÜ****=/=/=/<&Ü''Ü&'&'Ü&'Ü&'Ü&&>/&>/=>/=üü+öÖ#ﬁﬁﬁ#Ööö++üü+öÖ#ﬁ’ÖﬁŒﬁ’Ö#Öﬁ’Öﬁ’Ö#Ö// ´ß+{}}klääääüüääüßß-.,mnnnü+ö#ÖÖÖ#######################
+// 
+//
+//  
