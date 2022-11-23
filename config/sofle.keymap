@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "german-keymap.h"
-#include "greek.dtsi"
+//#include "greek.dtsi"
 
 #define BASE 0
 #define LOWER 1
@@ -100,15 +100,15 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-// |     | INS  | PSCR | GUI   |       |      |                | PGUP | END  |   ^   | HOME |  INS  |       |
-// |     | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   | ->   |  DEL  | BKSPC |
-// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      | SCRL | PRVS | PLAY  | NEXT |       |       |
+// |     | INS  | PSCR |   7   |   8   |  9   |                | PGUP | END  |   ^   | HOME |  INS  |       |
+// |     | ALT  | CTRL |   4   |   5   |  6   |                | PGDN |   <- |   v   | ->   |  DEL  | BKSPC |
+// |     | UNDO |  0   |   1   |   2   |  3   |      |  |      | SCRL | PRVS | PLAY  | NEXT |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                &none      &none       &none      &none       &none      &none
-&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &none        &none                       &kp PG_UP  &kp END     &kp UP     &kp HOME    &kp INS    &none  
-&trans     &kp LSHFT     &kp LCTRL    &kp LALT    &kp LGUI       &kp CLCK                    &kp PG_DN  &kp LEFT    &kp DOWN   &kp RIGHT   &kp DEL    &kp BSPC
-&trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans      &trans  &kp SLCK   &kp C_PREV  &kp C_PP   &kp C_NEXT  &trans     &trans
+&trans     &kp INS      &kp PSCRN    &kp N7       &kp N8       &kp N9                       &kp PG_UP  &kp END     &kp UP     &kp HOME    &kp INS    &none  
+&trans     &kp LSHFT    &kp LCTRL    &kp N4       &kp N5       &kp N6                    &kp PG_DN  &kp LEFT    &kp DOWN   &kp RIGHT   &kp DEL    &kp BSPC
+&trans     &kp K_UNDO   &kp N0       &kp N1       &kp N2       &kp N3  &trans      &trans  &kp SLCK   &kp C_PREV  &kp C_PP   &kp C_NEXT  &trans     &trans
                         &trans       &trans       &trans       &trans  &trans      &trans  &trans     &trans      &trans     &trans
             >;
 
