@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/international_chars/greek.dtsi"
-#include "../zmk-nodefree-config/international_chars/german.dtsi"
+//#include "../zmk-nodefree-config/international_chars/greek.dtsi"
+//#include "../zmk-nodefree-config/international_chars/german.dtsi"
 
 // #include "helper.h"
 #include "german-keymap.h"
