@@ -71,3 +71,11 @@
 #define DE_SCLN     LS(DE_COMM)       // ;
 #define DE_UNDS     LS(DE_MINS)       // _
 #define DE_BSLS     RA(DE_SS)         // (backslash)
+
+
+ZMK_UNICODE_PAIR(   de_ae,      N0, N0,  E, N4,    N0, N0,  C, N4)
+ZMK_UNICODE_PAIR(   de_oe,      N0, N0,  F, N6,    N0, N0,  D, N6)
+ZMK_UNICODE_PAIR(   de_ue,      N0, N0,  F,  C,    N0, N0,  D,  C)
+ZMK_UNICODE_SINGLE( de_eszett,  N0, N0,  D,  F)
+
+ZMK_UNICODE_SINGLE(de_sbls,   N0, N0, N5, C  )
