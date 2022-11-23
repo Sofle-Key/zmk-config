@@ -9,15 +9,15 @@
 #include <dt-bindings/zmk/bt.h>
 #include "helper.h"
 #include "german-keymap.h"
-//#include "greek.dtsi"
+#include "../zmk-nodefree-config/helper.h"
 
 #define BASE 0
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
 
-ZMK_UNICODE_PAIR(lin_ae, N0, N0, E, N4, N0, N0, C, N4)
-ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
+//ZMK_UNICODE_PAIR(lin_ae, N0, N0, E, N4, N0, N0, C, N4)
+//ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
 
 / {
     chosen {
