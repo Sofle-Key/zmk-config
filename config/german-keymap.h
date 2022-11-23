@@ -63,11 +63,12 @@
 #define DE_ACUT     EQUAL             // ´ (dead)
 #define DE_HASH     NON_US_HASH       // #
 #define DE_COLN     LS(DE_DOT)        // :
-#define DE_SLSH     RA(DE_SS) // LS(NUMBER_7)      // /
+#define DE_SLSH     LS(NUMBER_7)      // /
 #define DE_EQL      LS(NUMBER_0)      // =
 #define DE_QUES     LS(DE_SS)         // ?
 #define DE_GRV      LS(DE_ACUT)       // ` (dead)
 #define DE_QUOT     LS(DE_HASH)       // '
 #define DE_SCLN     LS(DE_COMM)       // ;
 #define DE_UNDS     LS(DE_MINS)       // _
-#define DE_BSLS     RA(DE_SS)         // (backslash)
+#define DE_BSLS     LS(NUMBER_7)         // (backslash)
+
