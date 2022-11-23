@@ -16,7 +16,7 @@
 #define RAISE 2
 #define ADJUST 3
 
-// ZMK_UNICODE_PAIR(lin_ae, N0, N0, E, N4, N0, N0, C, N4)
+ZMK_UNICODE_PAIR(lin_ae, N0, N0, E, N4, N0, N0, C, N4)
 
 / {
     chosen {
