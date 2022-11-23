@@ -71,36 +71,3 @@
 #define DE_SCLN     LS(DE_COMM)       // ;
 #define DE_UNDS     LS(DE_MINS)       // _
 #define DE_BSLS     RA(DE_SS)         // (backslash)
-
-
-
-#define UC_MACRO(name, unicode_bindings) \
-    / { \
-        macros { \
-            name: name { \
-                compatible = "zmk,behavior-macro"; \
-                label = ZMK_HELPER_STRINGIFY(UC_MACRO_ ## name); \
-                wait-ms = <0>; \
-                tap-ms = <0>; \
-                #binding-cells = <0>; \
-                bindings = <OS_UNICODE_LEAD>, <&macro_tap unicode_bindings>, <OS_UNICODE_TRAIL>; \
-            }; \
-        }; \
-    };
-
-#define UC_MODMORPH(name, uc_binding, shifted_uc_binding) \
-    / { \
-        behaviors { \
-            name: name { \
-                compatible = "zmk,behavior-mod-morph"; \
-                label = ZMK_HELPER_STRINGIFY(UC_MORPH_ ## name); \
-                #binding-cells = <0>; \
-                bindings = <uc_binding>, <shifted_uc_binding>; \
-                mods = <(MOD_LSFT|MOD_RSFT)>; \
-            }; \
-        }; \
-    };
-
-#define ZMK_UNICODE_SINGLE(name, L0, L1, L2, L3) \
-    UC_MACRO(name ## _lower, &kp L0 &kp L1 &kp L2 &kp L3) \
-    UC_MODMORPH(name, &name ## _lower, &none)
