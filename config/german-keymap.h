@@ -43,7 +43,7 @@
 #define DE_AMPR     LS(NUMBER_6)      // &
 #define DE_PERC     LS(NUMBER_5)      // %
 
-#define DE_PIPE     RA(DE_LABK)       // |
+#define DE_PIPE     RA(NUMBER_7)      // |
 #define DE_AT       RA(DE_Q)          // @
 #define DE_TILD     RA(DE_PLUS)       // ~
 #define DE_EURO     RA(DE_E)          // €
@@ -52,18 +52,18 @@
 #define DE_DEG      LS(DE_CIRC)       // °
 #define DE_SECT     LS(NUMBER_3)      // §
 
-#define DE_LPRN     LS(NUMBER_8)      // (
-#define DE_RPRN     LS(NUMBER_9)      // )
+#define DE_LPRN     RA(NUMBER_8)      // (
+#define DE_RPRN     RA(NUMBER_9)      // )
 #define DE_LCBR     RA(NUMBER_7)      // {
 #define DE_RCBR     RA(NUMBER_0)      // }
-#define DE_LBRC     RA(NUMBER_8)      // [
-#define DE_RBRC     RA(NUMBER_9)      // ]
+#define DE_LBRC     RA(NUMBER_5)      // [
+#define DE_RBRC     RA(NUMBER_6)      // ]
 #define DE_LABK     NON_US_BACKSLASH  // <
 #define DE_RABK     LS(DE_LABK)       // >
 #define DE_ACUT     EQUAL             // ´ (dead)
 #define DE_HASH     NON_US_HASH       // #
 #define DE_COLN     LS(DE_DOT)        // :
-#define DE_SLSH     LS(NUMBER_7)      // /
+#define DE_SLSH     RA(DE_SS) // LS(NUMBER_7)      // /
 #define DE_EQL      LS(NUMBER_0)      // =
 #define DE_QUES     LS(DE_SS)         // ?
 #define DE_GRV      LS(DE_ACUT)       // ` (dead)
