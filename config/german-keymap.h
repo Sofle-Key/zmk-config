@@ -72,8 +72,3 @@
 #define DE_UNDS     LS(DE_MINS)       // _
 #define DE_BSLS     LS(NUMBER_7)         // (backslash)
 
-<u005c
-#u005c"u005c
-!u005c
-!u005c
-"u005c#u005c¨≠≠[ç]
