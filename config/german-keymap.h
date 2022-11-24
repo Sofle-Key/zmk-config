@@ -70,5 +70,5 @@
 #define DE_QUOT     LS(DE_HASH)       // '
 #define DE_SCLN     LS(DE_COMM)       // ;
 #define DE_UNDS     LS(DE_MINS)       // _
-#define DE_BSLS     LS(NUMBER_7)         // (backslash)
+#define DE_BSLS     RA(RS(N7))         // (backslash)
 

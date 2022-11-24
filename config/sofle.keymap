@@ -92,7 +92,7 @@ ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
 &kp DE_SECT  &kp F1     &kp F2       &kp F3        &kp F4       &kp F5                          &kp F6       &kp F7      &kp F8       &kp F9      &kp F10      &kp F11
 &kp DE_TILD  &kp N1     &kp N2       &kp N3        &kp N4       &kp N5                          &kp N6       &kp N7      &kp N8       &kp N9      &kp N0       &kp F12
 &kp LA(L)    &kp EXCL   &kp DE_DQUO  &kp DE_HASH   &kp DLLR     &kp PRCNT                       &kp DE_LPRN  &kp DE_RPRN &kp DE_CIRC  &kp DE_AMPR &kp DE_ASTR  &kp DE_QUOT
-&kp LSHFT    &kp DE_EQL &kp DE_MINS  &kp DE_PLUS   &kp DE_LCBR  &kp DE_RCBR  &trans      &trans &kp DE_LBRC  &kp DE_RBRC &kp RA(RS(N7))  &kp DE_SLSH &kp DE_QUES  &kp DE_PIPE
+&kp LSHFT    &kp DE_EQL &kp DE_MINS  &kp DE_PLUS   &kp DE_LCBR  &kp DE_RCBR  &trans      &trans &kp DE_LBRC  &kp DE_RBRC &kp DE_BSLS  &kp DE_SLSH &kp DE_QUES  &kp DE_PIPE
                         &trans       &trans        &trans       &trans       &trans      &trans &trans       &trans       &trans          &trans
             >;
 
@@ -126,9 +126,9 @@ ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
         Adjust_layer {
         bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                &none      &none       &none      &none       &none      &none
-&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &none        &none                       &kp PG_UP  &kp END     &kp UP     &kp HOME    &kp INS    &none  
-&trans     &kp LALT     &kp LCTRL    &kp LSHFT    &kp LGUI       &kp CLCK                    &kp PG_DN  &kp LEFT    &kp DOWN   &kp RIGHT   &kp DEL    &kp BSPC
-&trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans      &trans  &kp SLCK   &kp C_PREV  &kp C_PP   &kp C_NEXT  &trans     &trans
+&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &none        &none                       &kp N7  &kp N8     &kp N9     &kp HOME    &kp INS    &none  
+&trans     &kp LALT     &kp LCTRL    &kp LSHFT    &kp LGUI       &kp CLCK                  &kp N4  &kp N5     &kp N6   &kp RIGHT   &kp DEL    &kp BSPC
+&trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans      &trans  &kp N1  &kp N2     &kp N3   &kp C_NEXT  &trans     &trans
                         &trans       &trans       &trans       &trans  &trans      &trans  &trans     &trans      &trans     &trans
         >;
         }; // https://github.com/infused-kim/zmk-config-sofle/blob/main/config/sofle.keymap
