@@ -92,7 +92,7 @@ ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
 &kp DE_SECT  &kp F1     &kp F2       &kp F3        &kp F4       &kp F5                          &kp F6       &kp F7      &kp F8       &kp F9      &kp F10      &kp F11
 &kp DE_TILD  &kp N1     &kp N2       &kp N3        &kp N4       &kp N5                          &kp N6       &kp N7      &kp N8       &kp N9      &kp N0       &kp F12
 &kp LA(L)    &kp EXCL   &kp DE_DQUO  &kp DE_HASH   &kp DLLR     &kp PRCNT                       &kp DE_LPRN  &kp DE_RPRN &kp DE_CIRC  &kp DE_AMPR &kp DE_ASTR  &kp DE_QUOT
-&kp LSHFT    &kp DE_EQL &kp DE_MINS  &kp DE_PLUS   &kp DE_LCBR  &kp DE_RCBR  &trans      &trans &kp DE_LBRC  &kp DE_RBRC &kp F24  &kp DE_SLSH &kp DE_QUES  &kp DE_PIPE
+&kp LSHFT    &kp DE_EQL &kp DE_MINS  &kp DE_PLUS   &kp DE_LCBR  &kp DE_RCBR  &trans      &trans &kp DE_LBRC  &kp DE_RBRC &kp RA(RS(N7))  &kp DE_SLSH &kp DE_QUES  &kp DE_PIPE
                         &trans       &trans        &trans       &trans       &trans      &trans &trans       &trans       &trans          &trans
             >;
 
