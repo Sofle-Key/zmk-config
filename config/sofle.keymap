@@ -114,14 +114,14 @@ ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
 // |     | INS  | Comm |   7   |   8   |  9   |                | PGUP | END  |   ^   | HOME |  INS  |       |
 // |     | ALT  | CTRL |   4   |   5   |  6   |                | PGDN |   <- |   v   | ->   |  DEL  | BKSPC |
-// |     | UNDO |  0   |   1   |   2   |  3   |      |  |      | SCRL | PRVS | PLAY  | NEXT |       |       |
+// |     | UNDO |  0   |   1   |   2   |  3   |      |  |      | SCRL | PRVS | PLAY  | NEXT |            |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                &none      &none       &none      &none       &none      &none
-&trans     &kp INS      &kp LG(LS(N7))  &kp N7       &kp N8       &kp N9                       &kp PG_UP  &kp END     &kp UP     &kp HOME    &kp INS    &none  
-&trans     &kp LSHFT    &kp LCTRL       &kp N4       &kp N5       &kp N6                    &kp PG_DN  &kp LEFT    &kp DOWN   &kp RIGHT   &kp DEL    &kp BSPC
-&trans     &kp K_UNDO   &kp N0          &kp N1       &kp N2       &kp N3  &trans      &trans  &kp SLCK   &kp C_PREV  &kp C_PP   &kp C_NEXT  &trans     &trans
-                        &trans          &trans       &trans       &trans  &trans      &trans  &trans     &trans      &trans     &trans
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                   &none        &kp C_PREV        &kp C_PP      &kp C_NEXT         &none         &none
+&trans     &kp INS      &kp LG(LS(N7))  &kp N7       &kp N8       &kp N9                      &kp PG_UP    &kp RA(LEFT) &kp UP     &kp RA(RIGHT) &kp PG_DN     %PG_UP  
+&trans     &kp LSHFT    &kp LCTRL       &kp N4       &kp N5       &kp N6                      &kp RG(LEFT) &kp LEFT     &kp DOWN   &kp RIGHT     &kp RG(RIGHT)    &kp PG_DN     
+&trans     &kp K_UNDO   &kp N0          &kp N1       &kp N2       &kp N3  &trans      &trans  &kp RA(RS(DOWN))     & RA(DOWN)    &kp RA(UP)    &kp RA(RS(UP))    &trans        &trans
+                        &trans          &trans       &trans       &trans  &trans      &trans  &trans       &trans       &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
