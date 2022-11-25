@@ -52,8 +52,8 @@
 #define DE_DEG      LS(DE_CIRC)       // °
 #define DE_SECT     LS(NUMBER_3)      // §
 
-#define DE_LPRN     RA(NUMBER_8)      // (
-#define DE_RPRN     RA(NUMBER_9)      // )
+#define DE_LPRN     RS(NUMBER_8)      // (
+#define DE_RPRN     RS(NUMBER_9)      // )
 #define DE_LCBR     RA(NUMBER_7)      // {
 #define DE_RCBR     RA(NUMBER_0)      // }
 #define DE_LBRC     RA(NUMBER_5)      // [
