@@ -80,11 +80,11 @@ ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
 // | SHIFT |  Z  |  X  |  C   |  V   |  B    |  MUTE       |  |             |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | ALT  | CTRL | SPACE | LOWER ENTER |  | RAISE SPACE | RAISE| GUI  | ALT   | CTRL  |
             bindings = <
-&kp BSPC &kp N1        &kp N2        &kp N3       &kp N4        &kp N5                                   &kp N6    &kp N7      &kp N8       &kp N9   &kp N0   &kp MINUS
-&kp ESC   &kp Q         &kp W         &kp E        &kp R         &kp T                                    &kp Y     &kp U       &kp I        &kp O    &kp P    &kp LBKT
-&kp TAB   &hm LSHFT A  &hm LCTRL S  &hm LALT D  &hm LGUI F   &kp G                                    &kp H     &hm RGUI J &hm RALT K  &hm RCTRL L &hm RSHFT SEMI &kp SQT
-&kp LSHFT &kp Z         &kp X         &kp C        &kp V         &kp B      &kp C_MUTE      &none         &kp N     &kp M       &kp COMMA    &kp DOT  &kp FSLH &kp RSHFT
-                        &kp LCTRL     &kp LALT     &kp LGUI      &lt RAISE SPACE  &lt LOWER RET   &lt RAISE DEL &kp BSPC  &kp RGUI    &kp RALT     &kp RCTRL
+&kp BSPC &kp N1        &kp N2        &kp N3       &kp N4        &kp N5                                         &kp N6    &kp N7      &kp N8       &kp N9      &kp N0        &kp MINUS
+&kp ESC   &kp Q        &kp W         &kp E        &kp R         &kp T                                          &kp Y     &kp U       &kp I        &kp O       &kp P          &kp LBKT
+&kp TAB   &hm LSHFT A  &hm LCTRL S   &hm LALT D   &hm LGUI F    &kp G                                          &kp H     &hm RGUI J  &hm RALT K   &hm RCTRL L &hm RSHFT SEMI &kp SQT
+&kp LSHFT &kp Z        &kp X         &kp C        &kp V         &kp B            &kp C_MUTE      &none         &kp N     &kp M       &kp COMMA    &kp DOT     &kp FSLH       &kp RSHFT
+                       &kp LCTRL     &kp LALT     &kp LGUI      &lt RAISE SPACE  &lt LOWER RET   &lt RAISE DEL &kp BSPC  &kp RGUI    &kp RALT     &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -99,11 +99,11 @@ ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
 // | SHIFT |  <  |  %  |  +   |  {   |  }   |        |  |       |  [   |  ]    |  \    |   /  |   ?   |   |   |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&kp DE_SECT  &kp F1     &kp F2       &kp F3        &kp F4       &kp F5                          &kp F6       &kp F7       &kp F8       &kp F9      &kp F10      &kp F11
-&kp DE_TILD  &kp N1     &kp N2       &kp N3        &kp N4       &kp N5                          &kp N6       &kp N7       &kp N8       &kp N9      &kp N0       &kp F12
-&kp LA(L)    &kp EXCL   &kp DE_DQUO  &kp DE_HASH   &kp DLLR     &kp DE_EQL                       &kp DE_LPRN  &kp DE_RPRN &kp DE_CIRC  &kp DE_AMPR &kp DE_ASTR  &kp DE_QUOT
-&kp LSHFT    &kp GRAVE  &kp PRCNT    &kp DE_PLUS   &kp DE_LCBR  &kp DE_RCBR  &trans      &trans &kp DE_LBRC  &kp DE_RBRC  &kp DE_BSLS  &kp DE_SLSH &kp DE_QUES  &kp DE_PIPE
-                        &trans       &trans        &trans       &trans       &trans      &trans &trans       &trans       &trans          &trans
+&kp DE_SECT  &kp F1       &kp F2       &kp F3        &kp F4       &kp F5                          &kp F6       &kp F7       &kp F8       &kp F9      &kp F10      &kp F11
+&kp DE_TILD  &kp N1       &kp N2       &kp N3        &kp N4       &kp N5                          &kp N6       &kp N7       &kp N8       &kp N9      &kp N0       &kp F12
+&kp LA(L)    &kp DE_EXLM  &kp DE_DQUO  &kp DE_HASH   &kp DLLR     &kp DE_EQL                      &kp DE_LPRN  &kp DE_RPRN  &kp DE_CIRC  &kp DE_AMPR &kp DE_ASTR  &kp DE_QUOT
+&kp LSHFT    &kp DE_LABK  &kp DE_PERC  &kp DE_PLUS   &kp DE_LCBR  &kp DE_RCBR  &trans      &trans &kp DE_LBRC  &kp DE_RBRC  &kp DE_BSLS  &kp DE_SLSH &kp DE_QUES  &kp DE_PIPE
+                          &trans       &trans        &trans       &trans       &trans      &trans &trans       &trans       &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp F11 F12 &inc_dec_kp PG_UP PG_DN>;

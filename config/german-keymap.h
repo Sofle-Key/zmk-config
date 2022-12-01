@@ -54,8 +54,8 @@
 
 #define DE_LPRN     RS(NUMBER_8)      // (
 #define DE_RPRN     RS(NUMBER_9)      // )
-#define DE_LCBR     RA(NUMBER_7)      // {
-#define DE_RCBR     RA(NUMBER_0)      // }
+#define DE_LCBR     RA(NUMBER_8)      // {
+#define DE_RCBR     RA(NUMBER_9)      // }
 #define DE_LBRC     RA(NUMBER_5)      // [
 #define DE_RBRC     RA(NUMBER_6)      // ]
 #define DE_LABK     NON_US_BACKSLASH  // <
