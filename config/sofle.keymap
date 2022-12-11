@@ -1,4 +1,4 @@
-/*
+dä/*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -83,8 +83,8 @@ ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
 &kp BSPC &kp N1        &kp N2        &kp N3       &kp N4        &kp N5                                         &kp N6    &kp N7      &kp N8       &kp N9      &kp N0        &kp MINUS
 &kp ESC   &kp Q        &kp W         &kp E        &kp R         &kp T                                          &kp Y     &kp U       &kp I        &kp O       &kp P          &kp LBKT
 &kp TAB   &hm LSHFT A  &hm LCTRL S   &hm LALT D   &hm LGUI F    &kp G                                          &kp H     &hm RGUI J  &hm RALT K   &hm RCTRL L &hm RSHFT SEMI &kp SQT
-&kp LSHFT &kp Z        &kp X         &kp C        &kp V         &kp B            &kp C_MUTE      &none         &kp N     &kp M       &kp COMMA    &kp DOT     &kp FSLH       &kp RSHFT
-                       &kp LCTRL     &kp LALT     &kp LGUI      &lt RAISE SPACE  &lt LOWER RET   &lt RAISE DEL &kp BSPC  &kp RGUI    &kp RALT     &kp RCTRL
+&kp LSHFT &kp Z        &kp X         &kp C        &kp V         &kp B            &kp C_MUTE      &none         &kp N     &kp M       &kp COMMA    &kp DOT     &kp FSLH       &kp RIGHT
+                       &kp LCTRL     &kp LALT     &kp LGUI      &lt RAISE SPACE  &lt LOWER RET   &lt RAISE DEL &kp BSPC  &kp LEFT    &kp UP     &kp DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
