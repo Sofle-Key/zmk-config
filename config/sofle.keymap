@@ -68,7 +68,16 @@ ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
         };
+
+    backlight: pwmleds {
+        compatible = "pwm-leds";
+        label = "Backlight LEDs";
+        pwm_led_0 {
+            pwms = <&pwm0 45>;
+            label = "Backlight LED 0";
+        };
     };
+};
     keymap {
         compatible = "zmk,keymap";
 
