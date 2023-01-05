@@ -39,8 +39,7 @@ ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-    };
-    behaviors {
+
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -68,7 +67,7 @@ ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
         };
-
+};
     backlight: pwmleds {
         compatible = "pwm-leds";
         label = "Backlight LEDs";
@@ -87,7 +86,7 @@ ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
 // |  ESC  |  Q  |  W  |  E   |  R   |  T    |                              |  Y   |  U    |  I    |  O   |   P   |   Ü   |
 // |  TAB  |  A  |  S  |  D   |  F   |  G    |                              |  H   |  J    |  K    |  L   |   Ö   |   Ä   |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B    |  MUTE       |  |             |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-//               | GUI | ALT  | CTRL | SPACE | LOWER ENTER |  | RAISE SPACE | RAISE| GUI  | ALT   | CTRL  |
+//               | GUI | ALT  | CTRL | LOWER SPACE | Raise ENTER |  | RAISE DEL | BSP| GUI  | ALT   | CTRL  |
             bindings = <
 &kp BSPC &kp N1        &kp N2        &kp N3       &kp N4        &kp N5                                         &kp N6    &kp N7      &kp N8       &kp N9      &kp N0        &kp MINUS
 &kp ESC   &kp Q        &kp W         &kp E        &kp R         &kp T                                          &kp Y     &kp U       &kp I        &kp O       &kp P          &kp LBKT
@@ -144,11 +143,11 @@ ZMK_UNICODE_SINGLE(de_bsl, N0, N0, N5, C)
 
         Adjust_layer {
         bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                &none      &none       &none      &none       &none      &none
-&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &none        &none                       &kp N7  &kp N8     &kp N9     &kp HOME    &kp INS    &none  
-&trans     &kp LALT     &kp LCTRL    &kp LSHFT    &kp LGUI       &kp CLCK                  &kp N4  &kp N5     &kp N6   &kp RIGHT   &kp DEL    &kp BSPC
-&trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans      &trans  &kp N1  &kp N2     &kp N3   &kp C_NEXT  &trans     &trans
-                        &trans       &trans       &trans       &trans  &trans      &trans  &trans     &trans      &trans     &trans
+&bt BT_CLR                      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                    &none &none &none &none &none &none
+&ext_power EXT_POWER_TOGGLE_CMD &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                                 &none &none &none &none &none &none
+&none                           &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                           &none &none &none &none &none &none
+&none                           &none           &none           &none           &none           &none               &rgb_ug RGB_TOG  &none      &none &none &none &none &none &none
+                                                &none           &none           &none           &none               &none            &none      &none &none &none &none
         >;
         }; // https://github.com/infused-kim/zmk-config-sofle/blob/main/config/sofle.keymap
     };
