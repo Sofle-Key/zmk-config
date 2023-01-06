@@ -36,7 +36,7 @@
 #define DE_UE       LEFT_BRACKET       // Ü
 #define DE_SS       MINUS              // ß
 
-#define DE_CIRC     GRAVE             // ^ (dead)
+#define DE_CIRC     NON_US_BACKSLASH  // ^ (dead)
 #define DE_EXLM     LS(NUMBER_1)      // !
 #define DE_DQUO     LS(NUMBER_2)      // "
 #define DE_DLR      LS(NUMBER_4)      // $
@@ -58,7 +58,7 @@
 #define DE_RCBR     RA(NUMBER_9)      // }
 #define DE_LBRC     RA(NUMBER_5)      // [
 #define DE_RBRC     RA(NUMBER_6)      // ]
-#define DE_LABK     NON_US_BACKSLASH  // <
+#define DE_LABK     GRAVE             // <
 #define DE_RABK     LS(DE_LABK)       // >
 #define DE_ACUT     EQUAL             // ´ (dead)
 #define DE_HASH     NON_US_HASH       // #
